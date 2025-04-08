@@ -14,49 +14,50 @@
 <body>
     <header class=" p-5">
 
-        <nav class="container d-flex justify-content-between align-items-center" >
-            <img src="img/fncgnbbfxvnm,m.jpg" class="nav-img " loading="lazy">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo-racionais.png" alt="Logotipo dos racionais" class="nav-img " loading="lazy">
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
-            <div id="acessibilidade" class="menu-acessibilidade"> 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">
+                  Acessibilidade
+                </button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
+                  <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>       
+                  <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+                  <button id="alterna-contraste" class="btn btn-primary fw-bold">
+                     <i class="bi bi-shadows"></i>
+                  </button>
                 </div>
-            </div>
+              </div>                         
         </nav>
-       
     </header>
 
 
     <main class="container my-5">
 
         <section id="inicio" class="my-5">
+            
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/jgh,m,nnb.webp" class="mb-3" width="563"
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a: </h1>
+                    <img src="img/racionais-foto.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
                         height="278" loading="lazy">
                     <a href="#tropicalia"
                         class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
                         conhecer!</a>
+                        
                 </div>
-                <img src="img/Racionais_MC's_(12197960953)_(cropped).jpg" alt="A imagem retrata o cantor principal do grupo de rap" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
 
-              </div>
+            </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
             <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="img/image (1).png" class="rounded-pill" width="273" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
+                  <div class="col-5">
                     <h2>Racionais_MCs</h2>
                     <p class="p-2">Racionais MC's Grupo pioneiro do rap brasileiro, 
                         formado por Mano Brown, Ice Blue, Edi Rock e KL Jay. 
@@ -68,30 +69,32 @@
             </div>
         </section>
 
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+        <section id="galeria">
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
                 <div class="row justify-content-md-center">
                     <div class="col-md-4">
-                        <img src="img/Racionais_MC's_(12197960953)_(cropped).jpg"
+                        <img src="img/1.jpg"
                             class="img-fluid rounded-5" loading="lazy">
                     </div>
                     <div class="col-md-4">
-                        <img src="img/Racionais_MC's_(12198308316).jpg" class="img-fluid rounded-5"
+                        <img src="img/2.jpg" class="img-fluid rounded-5"
                             loading="lazy">
                     </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-4">
+                            <img src="img/3.jpg"
+                                class="img-fluid rounded-5" loading="lazy">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/5.jpg" class="img-fluid rounded-5"
+                                loading="lazy">
+                        </div>
                 </div>
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/Racionais_MC's_(12198308316).jpghhhh" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/racionais.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-             </div>
+                
+                
+            </div>
         </section>
 
         <section id="contato">
@@ -115,7 +118,7 @@
                                 placeholder="Escreva sua mensagem"></textarea>
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
                                 mensagem</button>
                         </div>
                     </form>
@@ -128,11 +131,10 @@
         <i class="bi bi-whatsapp"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+        <p class="mt-3">Desenvolvido por Start Dheisyemanuelle. Projeto fictício sem fins comerciais.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
-  
+
 </body>
 
 </html>

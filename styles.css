@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+    --caqui-medio:  #535200;
+    --alto-contraste-fundo:  #000000;
+    --alto-contraste-texto:  #ffffff;
+    --alto-contraste-link:  #ffd700;
 }
+
 
 body {
     font-size: 1rem;
@@ -24,8 +25,8 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
-    font-weight: 600;
+    color: #535200;
+    font-weight: 700;
 }
 
 .inicio-fundo {
@@ -60,17 +61,19 @@ section {
 
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--caqui-medio);
     border-radius: 30px;
     border: none;
     width: 14em;
+    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
+    /* Convertido para em */
     align-content: center;
 
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--caqui-medio);
 }
 
 
@@ -99,8 +102,30 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--caqui-medio);
 }
+
+#galeria .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+#galeria .col-md-4 {
+    flex: 0 0 calc(33.333% - 1rem); 
+    max-width: calc(33.333% - 1rem);
+    padding: 0;
+}
+
+#galeria img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center; 
+ 
+}
+
 
 #galeria {
     background-color: #FAF4F4;
@@ -132,26 +157,26 @@ h2 {
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: #c44911;
     border: none;
     font-weight: bold;
 }
 
+/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
 }
+
 .menu-acessibilidade{
     position: fixed;
     top:2rem;
     right:20px;
     z-index: 1000;
 }
-
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
-}
-
+}      
 .opcoes-acessibilidade{
     margin-top:10px;
     display: flex;
@@ -164,34 +189,24 @@ h2 {
 .apresenta-lista{
     display: none;
 }
-
 .alto-contraste{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
-
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario{
+.alto-contraste header, .alto-contraste footer, .alto-contraste .formulario{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
-
 .alto-contraste .nav-link{
     color: var(--alto-contraste-link);
 }
-
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button,
-.alto-contraste .btn-primary{
+.alto-contraste .botao-inicio, .alto-contraste .formulario button, .alto-contraste .btn-primary{
     background-color: var(--alto-contraste-link);
     color: var(--alto-contraste-fundo)
 }
-
 .alto-contraste #tropicalia {
     background: none;
 }
-
 .alto-contraste #galeria {
     background-color: var(--alto-contraste-fundo);
 }
